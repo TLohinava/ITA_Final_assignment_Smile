@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,38 +11,48 @@
 <body>
   <div class="container">
     <header class="header">
-      <div class="header__logo">
+      <a class="header__logo" href="#">
         &#47; &#47; &#47;<span class="header__logo--bold">Lorem</span>
-      </div>
+      </a>
 
       <nav class="header__nav--block">
         <ul class="header__nav--item">
           <li class="header__nav--text header__nav--home">
-            Home
+            <a href="#">
+              Home
+            </a>
           </li>
         </ul>
 
         <ul class="header__nav--item">
           <li class="header__nav--text">
-            About us
+            <a href="#aboutus">
+              About us
+            </a>
           </li>
         </ul>
 
         <ul class="header__nav--item">
           <li class="header__nav--text">
-            Our Services
+            <a href="#ourservices">
+             Our Services
+            </a>
           </li>
         </ul>
 
         <ul class="header__nav--item">
           <li class="header__nav--text">
-            Prices
+            <a href="#prices">
+              Prices
+            </a>
           </li>
         </ul>
 
         <ul class="header__nav--item">
           <li class="header__nav--text">
-            Contact
+            <a href="#contact">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
@@ -64,20 +74,20 @@
             <p class="section-00__heading--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aperiam libero quis, quam voluptatum dolor voluptas delectus ducimus iste optio dignissimos incidunt est corrupti deserunt excepturi nisi molestias, obcaecati praesentium!
             </p>
 
-            <div class="section__button"><a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Show more</a></div>
+            <div class="section__button">
+              <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">
+                Show more
+              </a>
+            </div>
           </div>
         </div>
       </section>
-
-              
+  
       <div class="section__divider"></div>
-    </div>
 
-      <section class="section-01">
-
+      <section class="section-01" id="aboutus">
 
         <div class="section-01__container">
-
 
           <div class="section-01__content">
             <h2 class="section__heading">Lorem ipsum dolor
@@ -90,17 +100,22 @@
             <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima animi accusamus earum reprehenderit ex magnam quidem consequuntur amet veniam, cum deserunt rem nam maxime dolores, quibusdam quaerat fugit odit. Repudiandae!
             </p>
 
-            <div class="section__button"><a href="https://youtu.be/5Peo-ivmupE" target="_blank">Watch the video</a></div>
+            <div class="section__button">
+              <a href="https://youtu.be/5Peo-ivmupE" target="_blank">Watch the video
+              </a>
+            </div>
           </div>
 
-          <img class="section-01__image" src="/Macbook@1X.png" />
-        
-
+          <div class="section-01__laptopimage">
+            <img class="section-01__image" src="/Macbook@1X.png" alt="Opened Macbook Laptop" />
+            <img class="section-01__screenshot" src="/screenshot1.png" alt="Sreenshot of our website" />
+          </div>
+        </div>
       </section>
 
       <hr class="dashed" />
 
-      <section class="section-02">
+      <section class="section-02" id="ourservices">
         
         <div class="section-02__container">
 
@@ -116,53 +131,258 @@
 
           <div class="section-02__block">
             <div class="section-02__item">
-              <div class="item__block">
-                <div class="item__frame"></div>
-                <img class="item__image" src="/vector0.png" />
-              </div>
-              <h3 class="item__heading">FULLY EDITABLE</h3>
+                <div class="section-02__item--frame section-02__item--01frame">
+                </div>
+              <h3 class="item__heading">FULLY EDITABLE
+              </h3>
             </div>
 
             <div class="section-02__item">
-              <div class="item__block">
-                <div class="item__frame"></div>
-                <img class="item__image" src="/vector1.png" />
-              </div>
-              <h3 class="item__heading">FREE DOWNLOAD</h3>
+                <div class="section-02__item--frame section-02__item--02frame">
+                </div>
+              <h3 class="item__heading">FREE DOWNLOAD
+              </h3>
             </div>
 
             <div class="section-02__item">
-              <div class="item__block">
-                <div class="item__frame"></div>
-                <img class="item__image" src="/vector2.png" />
-              </div>
-              <h3 class="item__heading">MODERN DESIGN</h3>
+                <div class="section-02__item--frame section-02__item--03frame">
+                </div>
+              <h3 class="item__heading">MODERN DESIGN
+              </h3>
             </div>
 
             <div class="section-02__item">
-              <div class="item__block">
-                <div class="item__frame"></div>
-                <img class="item__image" src="/vector3.png" />
-              </div>
-              <h3 class="item__heading">100% RESPONSIVE</h3>
+                <div class="section-02__item--frame section-02__item--04frame">
+                </div>
+              <h3 class="item__heading">100% RESPONSIVE
+              </h3>
             </div>
           </div>
         </div>
         
-    </section>
+      </section>
 
-    <section class="section-03">
-      <div class="section-03__container">
-        <div class="section-03__inverted--commas">&ldquo;</div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptate labore suscipit magni ab eaque deleniti deserunt dolore totam. Porro officiis quasi mollitia, sequi iure quia. Dignissimos reprehenderit ut explicabo?
+      <section class="section-03">
+        <div class="section-03__container">
+          <div class="section-03__inverted--commas">&ldquo;
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse voluptate labore suscipit magni ab eaque deleniti deserunt dolore totam. Porro officiis quasi mollitia, sequi iure quia. Dignissimos reprehenderit ut explicabo?
+          </p>
+          <div class="section-03__inverted--commas">&rdquo;
+          </div>
+        </div>
+      </section>
+
+      <section class="section-04" id="prices">
+        <div class="section-04__container">
+          <h2 class="section__heading">Check our prices
+          </h2>
+
+          <svg class="section__line">
+            <line x1=0px x2=201px y1=3px y2=3px stroke-width=3px stroke="#ED145B" />
+          </svg>
+
+          <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quibusdam beatae, autem fugiat dolorum animi voluptas consequuntur enim et dolorem explicabo illo possimus, eius aut consequatur delectus in iste quas.
+          </p>
+
+          <div class="section-04__pricelist">
+
+            <div class="section-04__pricelist--block">
+              <div class="section-04__pricelist--pricebox">
+                <p  class="section-04__pricelist--pricetag">$
+                  <span class="section-04__pricelist--pricetag section-04__pricelist--pricetagbig">
+                    19
+                  </span>
+                  per month
+                </p>
+              </div>
+          
+              <div class="section-04__pricelist--planname"><h3>Standard</h3></div>
+          
+              <ul class="section-04__pricelist--descriptionbox">
+                <li>5 Projects</li>
+                <li>200 MB Storage</li>
+                <li>Notification settings</li>
+                <li>Password protection</li>
+              </ul>
+          
+              <div class="section-04__pricelist--buybutton"><a href=#>Buy now</a></div>
+            </div>
+
+            <div class="section-04__pricelist--block">
+              <div class="section-04__pricelist--pricebox">
+                <p  class="section-04__pricelist--pricetag">$
+                  <span class="section-04__pricelist--pricetag section-04__pricelist--pricetagbig">
+                    39
+                  </span>
+                  per month
+                </p>
+              </div>
+          
+              <div class="section-04__pricelist--planname">
+                <h3>Business
+                </h3>
+              </div>
+          
+              <ul class="section-04__pricelist--descriptionbox">
+                <li>15 Projects</li>
+                <li>1 GB Storage</li>
+                <li>Notification settings</li>
+                <li>Password protection</li>
+              </ul>
+          
+              <div class="section-04__pricelist--buybutton">
+                <a href=#>Buy now
+                </a>
+              </div>
+            </div>
+
+            <div class="section-04__pricelist--block">
+              <div class="section-04__pricelist--pricebox">
+                <p  class="section-04__pricelist--pricetag">$
+                  <span class="section-04__pricelist--pricetag section-04__pricelist--pricetagbig">
+                    59
+                  </span>
+                  per month
+                </p>
+              </div>
+          
+              <div class="section-04__pricelist--planname">
+                <h3>Premium
+                </h3>
+              </div>
+          
+              <ul class="section-04__pricelist--descriptionbox">
+                <li>30 Projects</li>
+                <li>2 GB Storage</li>
+                <li>Notification settings</li>
+                <li>Password protection</li>
+              </ul>
+          
+              <div class="section-04__pricelist--buybutton">
+                <a href=#>Buy now
+                </a>
+              </div>
+            </div>
+
+            <div class="section-04__pricelist--block">
+              <div class="section-04__pricelist--pricebox">
+                <p  class="section-04__pricelist--pricetag">$
+                  <span class="section-04__pricelist--pricetag section-04__pricelist--pricetagbig">
+                    99
+                  </span>
+                  per month
+                </p>
+              </div>
+          
+              <div class="section-04__pricelist--planname">
+                <h3>Unlimited
+                </h3>
+              </div>
+          
+              <ul class="section-04__pricelist--descriptionbox">
+                <li>Unlimited Projects
+                  </li>
+                <li>Unlimited Storage
+                </li>
+                <li>Notification settings</li>
+                <li>Password protection</li>
+              </ul>
+          
+              <div class="section-04__pricelist--buybutton">
+                <a href=#>Buy now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-05">
+        <div class="section-05__container">
+          <div class="section-05__block">
+
+            <img class="section-05__block--image" src="/06-1.png" alt="Phone box on a wall" />
+            <div class="section-05__block--description">
+              <h3 class="item__heading">high resolution 
+              </h3>
+              <p class="section-05__block--dtext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
+              </p>
+            </div>
+          </div>
+
+          <div class="section-05__block">
+            <img class="section-05__block--image" src="/06-2.png" alt="Building architecture" />
+            <div class="section-05__block--description">
+              <h3 class="item__heading">photography
+              </h3>
+              <p class="section-05__block--dtext">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
+              </p>
+            </div>
+          </div>
+
+          <div class="section-05__block">
+            <img class="section-05__block--image" src="/06-3.png" alt="Aerial view" />
+            <div class="section-05__block--description">
+              <h3 class="item__heading">easy to customise
+              </h3>
+              <p class="section-05__block--dtext">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
+              </p>
+            </div>
+          </div>
+
+          <div class="section-05__block">
+            <img class="section-05__block--image" src="/06-4.png" alt="A girl with a camera" />
+            <div class="section-05__block--description">
+              <h3 class="item__heading">24/7 support
+              </h3>
+              <p class="section-05__block--dtext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
+              </p>
+            </div>
+          </div>
+
+          <div class="section-05__block">
+            <img class="section-05__block--image" src="/06-5.png" alt="City canal with a view on a bridge" />
+            <div class="section-05__block--description">
+              <h3 class="item__heading">powerful theme
+              </h3>
+              <p class="section-05__block--dtext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
+              </p>
+            </div>
+          </div>
+
+          <div class="section-05__block">
+            <img class="section-05__block--image" src="/06-6.png" alt="Railway plantform" />
+            <div class="section-05__block--description">
+              <h3 class="item__heading">SEO optimisation
+              </h3>
+              <p class="section-05__block--dtext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-06" id="contact">
+        <p class="section-06__text">Become A Part Of 
+          <span class="bold">Lorem
+          </span> 
+          Community Today
         </p>
-        <div class="section-03__inverted--commas">&rdquo;</div>
-      </div>
-    </section>
+        <div class="section__button section__button--inverted">
+          <a href="https://github.com/topics/lorem-ipsum" target="_blank">Join us
+          </a>
+        </div>
+      </section>
 
-    <section class="section-04">
-      <div class="section-04__container">
-        <h2 class="section__heading">Check our prices
+      <section class="section-07">
+        <h2 class="section__heading">Our Latest Updates
         </h2>
 
         <svg class="section__line">
@@ -172,291 +392,145 @@
         <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quibusdam beatae, autem fugiat dolorum animi voluptas consequuntur enim et dolorem explicabo illo possimus, eius aut consequatur delectus in iste quas.
         </p>
 
-        <div class="section-04__pricelist">
+        <div class="section-07__newsblock">
+          
+          <div class="section-07__newsblock--item">
+            <a class="section-07__newsblock--photo section-07__newsblock--photo-1" href="#">
+              <div class="photo__divider">
+              </div>
+            </a>
 
-          <div class="section-04__pricelist--block">
-            <div class="section-04__pricelist--pricebox">
-              <p  class="section-04__pricelist--pricetag">$
-                <span class="section-04__pricelist--pricetag section-04__pricelist--pricetagbig">
-                  19
-                </span>
-                 per month
-              </p>
-            </div>
-        
-            <div class="section-04__pricelist--planname"><h3>Standard</h3></div>
-        
-            <ul class="section-04__pricelist--descriptionbox">
-              <li>5 Projects</li>
-              <li>200 MB Storage</li>
-              <li>Notification settings</li>
-              <li>Password protection</li>
-            </ul>
-        
-            <div class="section-04__pricelist--buybutton"><a href=#>Buy now</a></div>
+            <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit
+            </h3>
+            <p class="section-07__newsblock--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
+            </p>
           </div>
 
-                    <div class="section-04__pricelist--block">
-            <div class="section-04__pricelist--pricebox">
-              <p  class="section-04__pricelist--pricetag">$
-                <span class="section-04__pricelist--pricetag section-04__pricelist--pricetagbig">
-                  39
-                </span>
-                 per month
-              </p>
-            </div>
-        
-            <div class="section-04__pricelist--planname"><h3>Business</h3></div>
-        
-            <ul class="section-04__pricelist--descriptionbox">
-              <li>15 Projects</li>
-              <li>1 GB Storage</li>
-              <li>Notification settings</li>
-              <li>Password protection</li>
-            </ul>
-        
-            <div class="section-04__pricelist--buybutton"><a href=#>Buy now</a></div>
+          <div class="section-07__newsblock--item">
+            <a class="section-07__newsblock--photo section-07__newsblock--photo-2" href="#">
+              <div class="photo__divider">
+              </div>
+            </a>
+
+            <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit
+            </h3>
+            <p class="section-07__newsblock--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
+            </p>
           </div>
 
-          <div class="section-04__pricelist--block">
-            <div class="section-04__pricelist--pricebox">
-              <p  class="section-04__pricelist--pricetag">$
-                <span class="section-04__pricelist--pricetag section-04__pricelist--pricetagbig">
-                  59
-                </span>
-                 per month
-              </p>
-            </div>
-        
-            <div class="section-04__pricelist--planname"><h3>Premium</h3></div>
-        
-            <ul class="section-04__pricelist--descriptionbox">
-              <li>30 Projects</li>
-              <li>2 GB Storage</li>
-              <li>Notification settings</li>
-              <li>Password protection</li>
-            </ul>
-        
-            <div class="section-04__pricelist--buybutton"><a href=#>Buy now</a></div>
+          <div class="section-07__newsblock--item">
+            <a class="section-07__newsblock--photo section-07__newsblock--photo-3" href="#">
+              <div class="photo__divider">
+              </div>
+            </a>
+
+            <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit
+            </h3>
+            <p class="section-07__newsblock--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
+            </p>
+          </div>
+          
+          <div class="section-07__newsblock--item">
+            <a class="section-07__newsblock--photo section-07__newsblock--photo-4" href="#">
+              <div class="photo__divider">
+              </div>
+            </a>
+
+            <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit
+            </h3>
+            <p class="section-07__newsblock--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
+            </p>
           </div>
 
-          <div class="section-04__pricelist--block">
-            <div class="section-04__pricelist--pricebox">
-              <p  class="section-04__pricelist--pricetag">$
-                <span class="section-04__pricelist--pricetag section-04__pricelist--pricetagbig">
-                  99
-                </span>
-                 per month
-              </p>
-            </div>
-        
-            <div class="section-04__pricelist--planname"><h3>Unlimited</h3></div>
-        
-            <ul class="section-04__pricelist--descriptionbox">
-              <li>Unlimited Projects
-                </li>
-              <li>Unlimited Storage
-              </li>
-              <li>Notification settings</li>
-              <li>Password protection</li>
-            </ul>
-        
-            <div class="section-04__pricelist--buybutton"><a href=#>Buy now</a></div>
+          <div class="section-07__newsblock--item">
+            <a class="section-07__newsblock--photo section-07__newsblock--photo-5" href="#">
+              <div class="photo__divider">
+              </div>
+            </a>
+
+            <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit
+            </h3>
+
+            <p class="section-07__newsblock--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
+            </p>
           </div>
 
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="section-07__newsblock--item">
+            <a class="section-07__newsblock--photo section-07__newsblock--photo-6" href="#">
+              <div class="photo__divider">
+              </div>
+            </a>
 
+            <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit
+            </h3>
 
-    <section class="section-05">
-      <div class="section-05__container">
-        <div class="section-05__block">
-
-          <img class="section-05__block--image" src="/06-1.png" />
-          <div class="section-05__block--description">
-            <h3 class="item__heading">high resolution</h3>
-            <p class="section-05__block--dtext">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
+            <p class="section-07__newsblock--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
             </p>
           </div>
         </div>
+      </section>
 
-        <div class="section-05__block">
-          <img class="section-05__block--image" src="/06-2.png" />
-          <div class="section-05__block--description">
-            <h3 class="item__heading">photography</h3>
-            <p class="section-05__block--dtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
+      <section class="section-08">
+
+        <div class="section-08__container">
+          <h2 class="section__heading">This is a template
+          </h2>
+
+          <svg class="section__line">
+            <line x1=0px x2=201px y1=3px y2=3px stroke-width=3px stroke="#ED145B" />
+          </svg>
+
+          <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quibusdam beatae, autem fugiat dolorum animi voluptas consequuntur enim et dolorem explicabo illo possimus, eius aut consequatur delectus in iste quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ratione esse nostrum, facilis est eveniet repellendus culpa, veniam a provident nemo earum suscipit ipsa quaerat ullam quas illum saepe. Quasi.
           </p>
+
+          <div class="section__button">
+            <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">
+              Show more
+            </a>
           </div>
         </div>
+      </section>
 
-        <div class="section-05__block">
-        <img class="section-05__block--image" src="/06-3.png" />
-          <div class="section-05__block--description">
-            <h3 class="item__heading">easy to customise</h3>
-            <p class="section-05__block--dtext">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
-          </p>
+      <section class="section-09">
+        <div class="section-09__container">
+          
+          <div class="section-09__imageblock">
+            <img src="topbarmacbook.png" alt="Top bar MacOS" />
+            <img class="section-09__screenshot" src="/screenshot2.png" alt="Screenshot of the website layout" />
           </div>
-        </div>
 
-        <div class="section-05__block">
-        <img class="section-05__block--image" src="/06-4.png" />
-          <div class="section-05__block--description">
-            <h3 class="item__heading">24/7 support</h3>
-            <p class="section-05__block--dtext">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
+          <div class="section-09__content">
+            <h2 class="section__heading">Please share some love  by appreciate it and download!
+            </h2>
+
+            <svg class="section__line">
+              <line x1=0px x2=201px y1=3px y2=3px stroke-width=3px stroke="#ED145B" />
+            </svg>
+
+            <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quibusdam beatae, autem fugiat dolorum animi voluptas consequuntur enim et dolorem explicabo illo possimus, eius aut consequatur delectus in iste quas.
             </p>
+
+            <div class="section__button">
+              <a href="#" target="_blank">download!
+              </a>
+            </div>
           </div>
         </div>
-
-        <div class="section-05__block">
-        <img class="section-05__block--image" src="/06-5.png" />
-          <div class="section-05__block--description">
-            <h3 class="item__heading">powerful theme</h3>
-            <p class="section-05__block--dtext">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
-            </p>
-          </div>
-        </div>
-
-        <div class="section-05__block">
-        <img class="section-05__block--image" src="/06-6.png" />
-          <div class="section-05__block--description">
-            <h3 class="item__heading">SEO optimisation</h3>
-            <p class="section-05__block--dtext">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, veritatis explicabo delectus enim rerum porro sapiente consequatur animi, assumenda praesentium, rem illum a expedita commodi. Perspiciatis saepe et dolorem magnam?
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-06">
-      <p class="section-06__text">Become A Part Of <span class="bold">Lorem</span> Community Today</p>
-      <div class="section__button section__button--inverted"><a href="https://github.com/topics/lorem-ipsum" target="_blank">Join us</a></div>
-    </section>
-
-    <section class="section-07">
-      <h2 class="section__heading">Our Latest Updates</h2>
-      <svg class="section__line">
-        <line x1=0px x2=201px y1=3px y2=3px stroke-width=3px stroke="#ED145B" />
-      </svg>
-
-      <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quibusdam beatae, autem fugiat dolorum animi voluptas consequuntur enim et dolorem explicabo illo possimus, eius aut consequatur delectus in iste quas.
-      </p>
-
-      <div class="section-07__newsblock">
-        
-        <div class="section-07__newsblock--item">
-          <a class="section-07__newsblock--photo section-07__newsblock--photo-1" href="#">
-            <div class="photo__divider"></div>
-          </a>
-
-          <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit</h3>
-          <p class="section-07__newsblock--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
-          </p>
-        </div>
-
-        <div class="section-07__newsblock--item">
-          <a class="section-07__newsblock--photo section-07__newsblock--photo-2" href="#">
-            <div class="photo__divider"></div>
-          </a>
-
-          <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit</h3>
-          <p class="section-07__newsblock--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
-          </p>
-        </div>
-
-        <div class="section-07__newsblock--item">
-          <a class="section-07__newsblock--photo section-07__newsblock--photo-3" href="#">
-            <div class="photo__divider"></div>
-          </a>
-
-          <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit</h3>
-          <p class="section-07__newsblock--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
-          </p>
-        </div>
-        
-        <div class="section-07__newsblock--item">
-          <a class="section-07__newsblock--photo section-07__newsblock--photo-4" href="#">
-            <div class="photo__divider"></div>
-          </a>
-
-          <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit</h3>
-          <p class="section-07__newsblock--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
-          </p>
-        </div>
-
-        <div class="section-07__newsblock--item">
-          <a class="section-07__newsblock--photo section-07__newsblock--photo-5" href="#">
-            <div class="photo__divider"></div>
-          </a>
-
-          <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit</h3>
-          <p class="section-07__newsblock--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
-          </p>
-        </div>
-
-        <div class="section-07__newsblock--item">
-          <a class="section-07__newsblock--photo section-07__newsblock--photo-6" href="#">
-            <div class="photo__divider"></div>
-          </a>
-
-          <h3 class="section-07__newsblock--heading">Lorem ipsum dolor sit</h3>
-          <p class="section-07__newsblock--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse iusto eligendi iste omnis sint quaerat unde necessitatibus tempore.
-          </p>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section-08">
-
-      <div class="section-08__container">
-        <h2 class="section__heading">This is a template</h2>
-        <svg class="section__line">
-          <line x1=0px x2=201px y1=3px y2=3px stroke-width=3px stroke="#ED145B" />
-        </svg>
-
-        <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quibusdam beatae, autem fugiat dolorum animi voluptas consequuntur enim et dolorem explicabo illo possimus, eius aut consequatur delectus in iste quas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ratione esse nostrum, facilis est eveniet repellendus culpa, veniam a provident nemo earum suscipit ipsa quaerat ullam quas illum saepe. Quasi.
-        </p>
-
-        <div class="section__button"><a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Show more</a></div>
-
-      </div>
-    </section>
-
-    <section class="section-09">
-      <div class="section-09__container">
-        <img />
-        <h2 class="section__heading">Please share some love  by appreciate it and download! </h2>
-        <svg class="section__line">
-          <line x1=0px x2=201px y1=3px y2=3px stroke-width=3px stroke="#ED145B" />
-        </svg>
-
-        <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quibusdam beatae, autem fugiat dolorum animi voluptas consequuntur enim et dolorem explicabo illo possimus, eius aut consequatur delectus in iste quas.
-        </p>
-
-        <div class="section__button"><a href="#" target="_blank">download!</a></div>
-      </div>
-    </section>
+      </section>
     </main>
 
     <footer>
       <p>© 2015 COPYRIGHT MACHE TEMPLATE
       </p>
 
-      <p>Put together by Tatsiana Lohinava</p>
+      <p>Put together by Tatsiana Lohinava
+      </p>
     </footer>
   </div>
 </body>

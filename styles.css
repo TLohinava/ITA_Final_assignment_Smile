@@ -2,7 +2,6 @@
 
 * {
   margin: 0px;
-
 }
 
 body {
@@ -10,11 +9,12 @@ body {
   overflow-x: hidden;
   font-family: "Lato", "Myriad Pro", "Proxima Nova";
   margin: 0px auto;
+  min-height: 100vh;
 }
 
 .container {
   width: 100%;
-
+  position: relative;
 }
 
 
@@ -28,24 +28,28 @@ h2 {
 h3 {
   font-weight: 400;
   color: black;
+  padding: 5px;
 }
 
 p {
   color: #5A5A5A;
   font-size: 15px;
+  padding: 5px;
 }
 
 .header {
+  width: 100%;
   padding: 40px;
-  height: 50px;
+  min-height: 50px;
   position: absolute;
-  flex-flow: row;
+  grid-area: header;
 }
 
 .header__logo {
   position: absolute;
   font-size: 19px;
   color: #ED145B;
+  text-decoration: none;
 }
 
 .header__logo--bold {
@@ -56,19 +60,26 @@ p {
 .header__nav--block {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 20px;
+  padding: 40px;
   font-weight: 700;
-  /* position: absolute;
+  position: absolute;
   top: 0%;
-  right: 0%; */
+  right: 5%;
+
 }
 
 .header__nav--text {
-  font-size: 16px;
-  color: #FFFFFF;
   text-align: center;
   list-style-type: none;
+}
+
+.header__nav--text>a {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 .header__nav--home {
@@ -78,7 +89,8 @@ p {
 .section-00__container {
   display: flex;
   background-image: url(/main_pic.png);
-  height: 800px;
+  background-repeat: no-repeat;
+  min-height: 740px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -146,35 +158,55 @@ p {
 
 .section__divider {
   max-width: 2000px;
+  margin: 0px auto;
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 0 40px 40px 2000px;
+  border-width: 0 40px 40px 100vw;
   border-color: transparent transparent #F4F4F4 #ED145B;
   overflow: hidden;
 }
 
 .section-01__container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: #F4F4F4;
-  height: 650px;
+  height: 100%;
   width: 100%;
+  margin: 0;
+  gap: 50px;
+  padding: 50px;
+  justify-content: center;
 }
 
-.section-01__content {
+
+.section-01__content,
+.section-09__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
   width: 500px;
   height: 400px;
-  margin: 0px auto;
-
 }
 
-  .section-01__image {
-    box-shadow: 0 5px 6px -6px black;
+.section-01__image {
+  box-shadow: 0 5px 6px -6px black;
+}
 
+.section-01__screenshot {
+  position: absolute;
+  right: 12%;
+  top: 6%;
+}
+
+.section-01__laptopimage {
+  position: relative;
+}
+
+.section-09__screenshot {
+  float: left;
 }
 
 .dashed {
@@ -194,57 +226,67 @@ p {
 }
 
 .section-02 {
-  height: 700px;
+  display: flex;
   width: 100%;
+  min-height: 700px;
+  padding: 50px;
 }
 
 .section-02__container {
   display: flex;
   flex-direction: column;
+  align-self: center;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
   height: 100%;
-  width: 50%;
+  width: 75%;
   gap: 20px;
 }
 
 .section-02__block {
   display: flex;
   flex-flow: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-self: center;
   gap: 120px;
-  
 }
 
 .section-02__item {
   display: flex;
   flex-flow: column;
   gap: 30px;
+  cursor: pointer;
+  border: none;
+  background: none;
 }
 
-.item__block {
-  display: flex;
-  justify-content: center;
-}
-
-.item__frame {
+.section-02__item--frame {
   display: flex;
   width: 134px;
   height: 134px;
   border-radius: 50%;
   border: solid 1px #5A5A5A;
-  /* position: relative; */
-  justify-content: center;
-  align-content: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
 }
 
-.item__image {
-  display: flex;
-  position: absolute;
-  align-self: center;
-  justify-self: center;
+.section-02__item--01frame {
+  background-image: url(/vector1.png);
+}
+
+.section-02__item--02frame {
+  background-image: url(/vector2.png);
+}
+
+.section-02__item--03frame {
+  background-image: url(/vector3.png);
+}
+
+.section-02__item--04frame {
+  background-image: url(/vector4.png);
 }
 
 .item__heading {
@@ -256,7 +298,8 @@ p {
 }
 
 .section-03 {
-  height: 500px;
+  min-height: 500px;
+  display: grid;
   width: 100%;
   background-image: url(/main_pic.png);
   /* align-content: center; */
@@ -281,28 +324,31 @@ p {
 }
 
 .section-04 {
-  height: 1000px;
+  min-height: 1000px;
+  display: flex;
   width: 100%;
+  background-color: #F4F4F4;
+  padding: 50px 0px;
 }
 
-/* font-weight700 and 300 for the text */
-
 .section-04__container {
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
   height: 100%;
-  width: 50%;
+  width: 75%;
   gap: 20px;
 }
 
 .section-04__pricelist {
   display: flex;
   flex-wrap: wrap;
-  flex-flow: row;
+  flex-direction: row;
   gap: 30px;
+  justify-content: center;
 }
 
 .section-04__pricelist--block {
@@ -312,6 +358,7 @@ p {
   width: 263px;
   height: 450px;
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 .section-04__pricelist--pricebox {
@@ -389,10 +436,11 @@ p {
 
 .section-05 {
   display: flex;
-  height: 600px;
+  min-height: 600px;
   width: 100%;
   justify-content: center;
   align-content: center;
+  padding: 50px 0;
 }
 
 
@@ -403,9 +451,8 @@ p {
   justify-content: center;
   align-items: center;
   margin: 0px auto;
-  /* height: auto; */
   width: 75%;
-  gap: 30px;
+  gap: 50px;
 }
 
 .section-05__block {
@@ -413,7 +460,7 @@ p {
   height: 115px;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 20px;
 }
 
 .section-05__block--image {
@@ -425,10 +472,11 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 200px;
+  min-height: 200px;
   width: 100%;
   background-color: #ED145B;
   gap: 20px;
+  padding: 50px 0;
 }
 
 .section-06__text {
@@ -444,10 +492,12 @@ p {
 .section-07 {
   display: flex;
   flex-direction: column;
-  width: 60%;
-  height: 1000px;
+  width: 70%;
+  min-height: 1000px;
   margin: 0 auto;
-  text-align: center;
+  align-items: center;
+  padding: 50px 0;
+  gap: 20px;
 }
 
 .section-07__newsblock {
@@ -473,7 +523,6 @@ p {
 .section-07__newsblock--photo {
   width: 360px;
   height: 250px;
-
   background-repeat: no-repeat;
   background-size: auto;
   z-index: 2;
@@ -536,7 +585,7 @@ p {
 
 .photo__divider {
   position: absolute;
-  top: 238px;
+  top: 222px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -547,7 +596,7 @@ p {
 
 .section-08 {
   width: 100%;
-  height: 650px;
+  min-height: 650px;
   display: flex;
   background-image: url(/main_pic.png);
   flex-flow: column;
@@ -567,16 +616,27 @@ p {
 }
 
 .section-09 {
-  height: 755px;
+  display: flex;
+  min-height: 755px;
   width: 100%;
+  background-color: #F4F4F4;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-09__container {
-  width: 50%;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  gap: 100px;
+  padding: 50px 0;
+}
+
+.section-09__imageblock {
+  width: 800px;
+  box-shadow: 2px 1px 5px grey;
 }
 
 footer {
