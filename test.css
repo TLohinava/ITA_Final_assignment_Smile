@@ -1,0 +1,91 @@
+@import url(fonts.css);
+
+* {
+  margin: 0px;
+  font-family: "Myriad Pro";
+}
+
+.section-04__pricelist--block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 263px;
+  height: 450px;
+  align-self: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-04__pricelist--pricebox {
+  background-color: #5A5A5A;
+  width: 263px;
+  height: 150px;
+
+}
+
+.section-04__pricelist--pricetag {
+  background-color: #5A5A5A;
+  color: #F4F4F4;
+  font-size: 15px;
+  width: 80px;
+  height: 125px;
+  margin: 20px auto;
+}
+
+.section-04__pricelist--pricetagbig {
+  font-size: 50px;
+  padding: 0px;
+}
+
+.section-04__pricelist--planname {
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  top: 125px;
+  left: 30px;
+  background-color: #F4F4F4;
+  border: none;
+  border-radius: 50px;
+
+}
+
+.section-04__pricelist--planname>h3 {
+  color: #5A5A5A;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 13px 0px;
+}
+
+.section-04__pricelist--descriptionbox {
+  width: 263px;
+  height: 300px;
+  margin: 50px auto;
+  padding: 0px;
+}
+
+.section-04__pricelist--descriptionbox>li {
+  font-size: 15px;
+  color: #5A5A5A;
+  list-style-type: none;
+  line-height: 2em;
+}
+
+.section-04__pricelist--buybutton {
+  border: none;
+  align-self: center;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  width: 200px;
+  height: 50px;
+  background-color: #ED145B;
+  border-radius: 50px;
+}
+
+.section-04__pricelist--buybutton>a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
