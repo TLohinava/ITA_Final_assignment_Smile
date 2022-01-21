@@ -531,66 +531,54 @@ p {
   background-repeat: no-repeat;
   background-size: auto;
   z-index: 2;
+  position: relative;
 }
 
-.section-07__newsblock--photo:hover {
-  background-image: url(/095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9)), url(/07-1.png);
+.section-07__newsblock--photo::before {
+  content: "";
+  background-image: url(/095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9));
+  opacity: 0;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section-07__newsblock--photo:hover::before {
   background-repeat: no-repeat;
   background-position: center;
-  z-index: 3;
+  opacity: 1;
 }
 
 .section-07__newsblock--photo-1 {
   background-image: url(/07-1.png);
 }
 
-.section-07__newsblock--photo-1:hover {
-  background-image: url(/095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9)), url(/07-1.png);
-}
-
 .section-07__newsblock--photo-2 {
   background-image: url(/07-2.png);
-}
-
-.section-07__newsblock--photo-2:hover {
-  background-image: url(/095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9)), url(/07-2.png);
 }
 
 .section-07__newsblock--photo-3 {
   background-image: url(/07-3.png);
 }
 
-.section-07__newsblock--photo-3:hover {
-  background-image: url(/095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9)), url(/07-3.png);
-}
-
 .section-07__newsblock--photo-4 {
   background-image: url(/07-4.png);
-}
-
-.section-07__newsblock--photo-4:hover {
-  background-image: url(/095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9)), url(/07-4.png);
 }
 
 .section-07__newsblock--photo-5 {
   background-image: url(/07-5.png);
 }
 
-.section-07__newsblock--photo-5:hover {
-  background-image: url(/095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9)), url(/07-5.png);
-}
-
 .section-07__newsblock--photo-6 {
   background-image: url(/07-6.png);
 }
 
-.section-07__newsblock--photo-6:hover {
-  background-image: url(/095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9)), url(/07-6.png);
-}
-
 .photo__divider {
   position: absolute;
-  top: 223px;
+  bottom: 0;
   width: 0;
   height: 0;
   border-style: solid;
