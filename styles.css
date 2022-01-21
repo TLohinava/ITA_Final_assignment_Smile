@@ -17,7 +17,6 @@ body {
   position: relative;
 }
 
-
 h2 {
   color: #5A5A5A;
   font-size: 38px;
@@ -29,12 +28,30 @@ h3 {
   font-weight: 400;
   color: black;
   padding: 5px;
+  font-size: 15px;
 }
 
 p {
   color: #5A5A5A;
   font-size: 15px;
   padding: 5px;
+  font-weight: 300;
+}
+
+q {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-style: italic;
+  padding: 5px;
+  quotes: "\201C""\201D""\2018""\2019"
+}
+
+q::before,
+q::after {
+  font-size: 158px;
+  color: #ED145B;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;;
 }
 
 .header {
@@ -69,18 +86,22 @@ p {
   right: 5%;
 }
 
-.header__nav--text {
+.header__nav--link {
   text-align: center;
   list-style-type: none;
 }
 
-.header__nav--text>a {
+.header__nav--link>a {
   font-size: 16px;
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.header__nav--home {
+.header__nav--link>a:hover {
+  color: #ED145B;
+}
+
+.header__nav--home>a {
   color: #ED145B;
 }
 
@@ -134,13 +155,6 @@ p {
   width: 200px;
   border-radius: 50px;
   border: none;
-}
-
-.section__button--inverted {
-  background-color: #FFFFFF;
-}
-
-.section__button>a {
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
@@ -148,11 +162,11 @@ p {
   font-weight: 700;
 }
 
-.section__button--inverted>a {
+.section__button--inverted {
+  background-color: #FFFFFF;
   color: #ED145B;
   text-decoration: none;
 }
-
 
 .section__divider {
   max-width: 2000px;
@@ -165,7 +179,7 @@ p {
   overflow: hidden;
 }
 
-.section-01__container {
+.section-01 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -178,7 +192,6 @@ p {
   justify-content: center;
 }
 
-
 .section-01__content,
 .section-09__content {
   display: flex;
@@ -187,6 +200,7 @@ p {
   gap: 20px;
   width: 500px;
   height: 400px;
+  padding: 10px;
 }
 
 .section-01__image {
@@ -203,24 +217,8 @@ p {
   position: relative;
 }
 
-.section-09__screenshot {
-  float: left;
-}
-
 .dashed {
   border-top: 3px dashed #bbb;
-}
-
-.section__text {
-  color: #5A5A5A;
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.section__heading {
-  color: #5A5A5A;
-  font-size: 38px;
-  font-weight: 300;
 }
 
 .section-02 {
@@ -297,10 +295,9 @@ p {
 
 .section-03 {
   min-height: 500px;
-  display: grid;
+  display: flex;
   width: 100%;
   background-image: url(/main_pic.png);
-  /* align-content: center; */
 }
 
 .section-03__container {
@@ -308,17 +305,10 @@ p {
   flex-flow: column;
   width: 50%;
   height: 100%;
+  align-self: center;
   align-content: center;
-  justify-content: center;
   text-align: center;
   margin: 0px auto;
-}
-
-.section-03__inverted--commas {
-  font-size: 158px;
-  color: #ED145B;
-  font-weight: 700;
-  font-family: "Roboto";
 }
 
 .section-04 {
@@ -388,14 +378,12 @@ p {
   background-color: #F4F4F4;
   border: none;
   border-radius: 50px;
-}
-
-.section-04__pricelist--planname>h3 {
   color: #5A5A5A;
   text-transform: uppercase;
   text-align: center;
-  padding: 13px 0px;
+  padding: 0;
   font-weight: 700;
+  line-height: 50px;
 }
 
 .section-04__pricelist--descriptionbox {
@@ -422,9 +410,6 @@ p {
   height: 50px;
   background-color: #ED145B;
   border-radius: 50px;
-}
-
-.section-04__pricelist--buybutton>a {
   color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
@@ -440,7 +425,6 @@ p {
   align-content: center;
   padding: 50px 0;
 }
-
 
 .section-05__container {
   display: flex;
@@ -599,13 +583,17 @@ p {
 .section-08__container {
   display: flex;
   flex-flow: column;
-  width: 700px;
+  max-width: 700px;
   height: 300px;
   align-self: center;
   align-items: center;
   text-align: center;
-  /* justify-content: center; */
   gap: 20px;
+}
+
+.section-08__container h2,
+.section-08__container p {
+  color: #FFFFFF;
 }
 
 .section-09 {
@@ -637,10 +625,10 @@ footer {
   background-color: #2B2B2B;
   color: #FFFFFF;
   font-size: 15px;
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   padding: 0px 50px;
   text-transform: uppercase;
 }
