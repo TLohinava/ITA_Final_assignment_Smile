@@ -42,7 +42,6 @@ p {
   padding: 40px;
   min-height: 50px;
   position: absolute;
-  grid-area: header;
 }
 
 .header__logo {
@@ -68,7 +67,6 @@ p {
   position: absolute;
   top: 0%;
   right: 5%;
-
 }
 
 .header__nav--text {
@@ -176,7 +174,7 @@ p {
   width: 100%;
   margin: 0;
   gap: 50px;
-  padding: 50px;
+  padding: 50px 0;
   justify-content: center;
 }
 
@@ -228,8 +226,8 @@ p {
 .section-02 {
   display: flex;
   width: 100%;
-  min-height: 700px;
-  padding: 50px;
+  min-height: 600px;
+  padding: 50px 0;
 }
 
 .section-02__container {
@@ -324,7 +322,7 @@ p {
 }
 
 .section-04 {
-  min-height: 1000px;
+  min-height: 800px;
   display: flex;
   width: 100%;
   background-color: #F4F4F4;
@@ -452,7 +450,7 @@ p {
   align-items: center;
   margin: 0px auto;
   width: 75%;
-  gap: 50px;
+  gap: 40px;
 }
 
 .section-05__block {
@@ -465,6 +463,12 @@ p {
 
 .section-05__block--image {
   height: 57px;
+}
+
+.section-05__block--dtext {
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
 }
 
 .section-06 {
@@ -496,6 +500,7 @@ p {
   min-height: 1000px;
   margin: 0 auto;
   align-items: center;
+  text-align: center;
   padding: 50px 0;
   gap: 20px;
 }
@@ -585,7 +590,7 @@ p {
 
 .photo__divider {
   position: absolute;
-  top: 222px;
+  top: 223px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -620,18 +625,18 @@ p {
   min-height: 755px;
   width: 100%;
   background-color: #F4F4F4;
-  align-items: center;
-  justify-content: center;
 }
 
 .section-09__container {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
   gap: 100px;
   padding: 50px 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-09__imageblock {
