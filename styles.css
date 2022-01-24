@@ -1,7 +1,9 @@
 @import url(fonts.css);
+@import url(media_styles.css);
 
 * {
   margin: 0px;
+  padding: 0px;
 }
 
 body {
@@ -15,11 +17,13 @@ body {
 .container {
   width: 100%;
   position: relative;
+  box-sizing: border-box;
 }
 
 .section__divider ~ section {
   min-height: fit-content;
   padding: 100px 0;
+  margin: 0 auto;
 }
 
 h2 {
@@ -39,15 +43,14 @@ h3 {
 p {
   color: #5A5A5A;
   font-size: 15px;
-  padding: 5px;
   font-weight: 300;
 }
 
 q {
   color: #FFFFFF;
-  font-size: 15px;
+  font-size: 25px;
   font-style: italic;
-  padding: 5px;
+  max-width: 681px;
   quotes: "\201C""\201D""\2018""\2019"
 }
 
@@ -104,13 +107,14 @@ q::after {
 
 .header__nav--link>a:hover {
   color: #ED145B;
+  transition: 200ms;
 }
 
 .header__nav--home>a {
   color: #ED145B;
 }
 
-.section-00__container {
+.section-00 {
   display: flex;
   background-image: url(/main_pic.png);
   background-repeat: no-repeat;
@@ -118,7 +122,6 @@ q::after {
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding: 0;
 }
 
 .section-00__content {
@@ -145,10 +148,14 @@ q::after {
   height: 5px;
 }
 
-.section-00__heading--text {
+.section-00__text {
   font-size: 22px;
   font-weight: 300;
   color: #FFFFFF;
+}
+
+.section__text {
+  max-width: 681px;
   text-align: center;
 }
 
@@ -192,14 +199,15 @@ q::after {
   overflow: hidden;
 }
 
-.section-01 {
+.section-01,
+.section-09 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   background-color: #F4F4F4;
-  margin: 0;
-  padding: 50px 0;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
 }
 
 .section-01__content,
@@ -207,16 +215,21 @@ q::after {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-self: center;
   gap: 20px;
-  width: 500px;
-  height: 400px;
   padding: 10px;
+}
+
+.section-01__content>p,
+.section-09__content>p {
+  text-align: left;
+  max-width: 500px;
 }
 
 .section-01__imageblock {
   position: relative;
-  width: 900px;
-  height: 516px;
+  max-width: 900px;
+  max-height: 516px;
   top: 0;
   left:0;
   margin:0;
@@ -237,78 +250,17 @@ q::after {
   height: auto;
 }
 
-@media only screen and (max-width:575px) {
-  .section-01__imageblock {
-    width: 300px !important;
-    height: 172px !important;
-  }
-
-  .section-01__laptop {
-    width: 300px !important;
-    height: 172px !important;
-  }
-
-  .section-01__screenshot {
-    position: absolute;
-    top: 8%;
-    left: 14%;
-    width: 72%;
-    height: auto;
-  }
-}
-
-@media only screen and (min-width:576px) and (max-width:1199px) {
-  .section-01__imageblock {
-    width: 600px !important;
-    height: 344px !important;
-  }
-
-  .section-01__laptop {
-    width: 600px !important;
-    height: 344px !important;
-  }
-
-  .section-01__screenshot {
-    position: absolute;
-    top: 8%;
-    left: 12.5%;
-    width: 75%;
-    height: auto;
-  }
-}
-
-@media only screen and (min-width:1200px) and (max-width:1465px) {
-  .section-01__imageblock {
-    width: 650px !important;
-    height: 372px !important;
-  }
-
-  .section-01__laptop {
-    width: 650px !important;
-    height: 372px !important;
-  }
-
-  .section-01__screenshot {
-    position: absolute;
-    top: 8%;
-    left: 12.5%;
-    width: 75%;
-    height: auto;
-  }
-}
-
 .dashed {
   border-top: 3px dashed #bbb;
 }
 
-.section-02__container {
+.section-02 {
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
-  height: 100%;
   max-width: 1000px;
   gap: 20px;
 }
@@ -368,32 +320,23 @@ q::after {
 
 .section-03 {
   background-image: url(/main_pic.png);
+  display: flex;
+  align-content: center;
 }
 
-.section-03__container {
-  display: flex;
-  flex-flow: column;
-  width: 50%;
-  height: 100%;
-  align-self: center;
-  align-content: center;
+.section-03>q {
+  margin: 0 auto;
   text-align: center;
-  margin: 0px auto;
 }
 
 .section-04 {
   background-color: #F4F4F4;
-}
-
-.section-04__container {
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
-  height: 100%;
-  width: 75%;
   gap: 20px;
 }
 
@@ -403,6 +346,7 @@ q::after {
   flex-direction: row;
   gap: 30px;
   justify-content: center;
+  width: 75%;
 }
 
 .section-04__pricelist--block {
@@ -432,7 +376,6 @@ q::after {
 
 .section-04__pricelist--pricetagbig {
   font-size: 50px;
-  padding: 0px;
 }
 
 .section-04__pricelist--planname {
@@ -447,7 +390,6 @@ q::after {
   color: #5A5A5A;
   text-transform: uppercase;
   text-align: center;
-  padding: 0;
   font-weight: 700;
   line-height: 50px;
 }
@@ -456,7 +398,6 @@ q::after {
   width: 263px;
   height: 300px;
   margin: 50px auto;
-  padding: 0px;
 }
 
 .section-04__pricelist--descriptionbox>li {
@@ -495,12 +436,7 @@ q::after {
 .section-05 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-}
-
-.section-05__container {
-  display: flex;
+  align-self: center;
   flex-wrap: wrap;
   min-width: 345px;
   max-width: 1200px;
@@ -533,6 +469,7 @@ q::after {
   font-size: 38px;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding: 5px;
 }
 
 .bold {
@@ -546,7 +483,6 @@ q::after {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
-  text-align: center;
   gap: 20px;
 }
 
@@ -635,151 +571,36 @@ q::after {
 .section-08 {
   display: flex;
   background-image: url(/main_pic.png);
+  background-repeat: no-repeat;
   flex-flow: column;
-  justify-content: center;
-}
-
-.section-08__container {
-  display: flex;
-  flex-flow: column;
-  max-width: 700px;
-  height: 300px;
-  align-self: center;
   align-items: center;
-  text-align: center;
   gap: 20px;
 }
 
-.section-08__container h2,
-.section-08__container p {
+.section-08 h2,
+.section-08 p {
   color: #FFFFFF;
 }
 
-.section-09 {
-  display: flex;
-  background-color: #F4F4F4;
-}
-
-.section-09__container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 100%;
-  gap: 100px;
-  padding: 50px 0;
-  align-items: center;
-  justify-content: center;
-}
-
 .section-09__imageblock {
-  min-width: 350px;
-  max-width: 800px;
-  max-height: 601px;
-  box-shadow: 2px 1px 5px grey;
   position: relative;
+  width: 800px;
+  height: 570px;
+  box-shadow: 2px 1px 5px grey;
 }
 
 .section-09__topbar {
   position: absolute;
-  width: 100%;
+  width: 800px;
   top: 0;
   left: 0;
 }
 
 .section-09__screenshot {
   position: absolute;
-  width:100%;
-  top: 6.3%;
+  max-width: 800px;
+  top: 7%;
   left: 0;
-}
-
-@media only screen and (max-width:991px) {
-  .section-09__imageblock {
-    width: 350px !important;
-    height: 263px !important;
-    box-shadow: 2px 1px 5px grey;
-  }
-
-  .section-09__topbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  .section-09__screenshot {
-    position: absolute;
-    width:100%;
-    top: 6.3%;
-    left: 0;
-  }
-}
-
-@media only screen and (min-width:992px) and (max-width:1199px) {
-  .section-09__imageblock {
-    width: 350px !important;
-    height: 263px !important;
-    box-shadow: 2px 1px 5px grey;
-  }
-
-  .section-09__topbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  .section-09__screenshot {
-    position: absolute;
-    width:100%;
-    top: 6.3%;
-    left: 0;
-  }
-}
-
-@media only screen and (min-width:1200px) and (max-width:1465px) {
-  .section-09__imageblock {
-    width: 500px !important;
-    height: 375px !important;
-    box-shadow: 2px 1px 5px grey;
-  }
-
-  .section-09__topbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  .section-09__screenshot {
-    position: absolute;
-    width:100%;
-    top: 6.3%;
-    left: 0;
-  }
-}
-
-@media only screen and (min-width:1466px) {
-  .section-09__imageblock {
-    width: 800px !important;
-    height: 601px !important;
-    box-shadow: 2px 1px 5px grey;
-  }
-
-  .section-09__topbar {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-  .section-09__screenshot {
-    position: absolute;
-    width:100%;
-    top: 6.3%;
-    left: 0;
-  }
 }
 
 footer {
