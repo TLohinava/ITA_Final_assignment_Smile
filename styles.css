@@ -116,7 +116,7 @@ q::after {
 
 .section-00 {
   display: flex;
-  background-image: url(/main_pic.png);
+  background-image: url(./main_pic.png);
   background-repeat: no-repeat;
   min-height: 740px;
   width: 100%;
@@ -295,19 +295,19 @@ q::after {
 }
 
 .section-02__item--01frame {
-  background-image: url(/vector1.png);
+  background-image: url(./vector1.png);
 }
 
 .section-02__item--02frame {
-  background-image: url(/vector2.png);
+  background-image: url(./vector2.png);
 }
 
 .section-02__item--03frame {
-  background-image: url(/vector3.png);
+  background-image: url(./vector3.png);
 }
 
 .section-02__item--04frame {
-  background-image: url(/vector4.png);
+  background-image: url(./vector4.png);
 }
 
 .item__heading {
@@ -319,7 +319,7 @@ q::after {
 }
 
 .section-03 {
-  background-image: url(/main_pic.png);
+  background-image: url(./main_pic.png);
   display: flex;
   align-content: center;
 }
@@ -517,7 +517,7 @@ q::after {
 
 .section-07__newsblock--photo::before {
   content: "";
-  background-image: url(/095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9));
+  background-image: url(./095__search@1X.png), linear-gradient(rgba(237,20,91,0.9), rgba(237,20,91,0.9));
   opacity: 0;
   position: absolute;
   background-repeat: no-repeat;
@@ -534,27 +534,27 @@ q::after {
 }
 
 .section-07__newsblock--photo-1 {
-  background-image: url(/07-1.png);
+  background-image: url(07-1.png);
 }
 
 .section-07__newsblock--photo-2 {
-  background-image: url(/07-2.png);
+  background-image: url(07-2.png);
 }
 
 .section-07__newsblock--photo-3 {
-  background-image: url(/07-3.png);
+  background-image: url(07-3.png);
 }
 
 .section-07__newsblock--photo-4 {
-  background-image: url(/07-4.png);
+  background-image: url(07-4.png);
 }
 
 .section-07__newsblock--photo-5 {
-  background-image: url(/07-5.png);
+  background-image: url(07-5.png);
 }
 
 .section-07__newsblock--photo-6 {
-  background-image: url(/07-6.png);
+  background-image: url(07-6.png);
 }
 
 .photo__divider {
@@ -570,7 +570,7 @@ q::after {
 
 .section-08 {
   display: flex;
-  background-image: url(/main_pic.png);
+  background-image: url(main_pic.png);
   background-repeat: no-repeat;
   flex-flow: column;
   align-items: center;
